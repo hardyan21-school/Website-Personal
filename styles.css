@@ -1,0 +1,461 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, #FFD700, #FFFACD);  /* Gradasi dari kuning keputihan */
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+header {
+  background-image: url('gambar/judul2.jpg');
+  background-size: cover;  /* Gambar akan mengisi area secara penuh */
+  background-position: center top;
+  background-attachment: fixed;
+  text-align: center;
+  color: white;
+  padding: 100px 0;
+  height: 400px;  /* Menentukan tinggi header agar gambar lebih terlihat */
+}
+
+h1 {
+  font-size: 2em;
+}
+
+/* Instagram Logo and Name */
+.instagram-logo {
+  display: flex;               
+  align-items: center;        
+  justify-content: center;     /* Menjaga elemen-elemen berada di tengah secara horizontal */
+  gap: 10px;                 
+  background-color: #fff;    
+  padding: 10px 20px;        
+  border-radius: 8px;        
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+  max-width: 250px;          
+  transition: transform 0.3s ease-in-out;
+  margin: 0 auto;             /* Memusatkan elemen */
+}
+
+.instagram-logo:hover {
+  transform: scale(1.05);    /* Efek zoom saat hover */
+}
+
+.instagram-logo img {
+  width: 40px;               /* Ukuran logo Instagram */
+  height: 40px;              /* Membuat logo tetap proporsional */
+  object-fit: cover;         /* Menjaga rasio aspek gambar */
+  border-radius: 8px;        /* Memberikan sudut melengkung pada gambar */
+}
+
+.instagram-name {
+  font-size: 1.2em;
+  color: #333;
+  font-weight: bold;
+  text-transform: none; /* Menonaktifkan kapitalisasi otomatis */
+  margin: 0;
+  text-align: center;         /* Memastikan nama juga terpusat */
+}
+
+/* Section About */
+#about {
+  background: linear-gradient(to bottom, #fffacd, #fff5e1);  /* Gradasi kuning kekuningan */
+  padding: 40px 0;
+  color: #333;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+  font-size: 2em;
+  color: #d87d0e; /* Warna oranye untuk judul */
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.advertisement-video {
+  margin: 40px 0;
+  text-align: center;
+}
+
+video {
+  width: 1200px;  /* Menetapkan lebar video menjadi 1200px */
+  height: 400px;  /* Menetapkan tinggi video menjadi 400px */
+  border-radius: 15px; /* Memberikan sudut yang lebih bulat */
+  border: 5px solid #FFD700; /* Border warna kuning */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Memberikan bayangan lembut di sekitar video */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi yang halus */
+}
+
+/* Efek hover */
+video:hover {
+  transform: scale(1.05); /* Memperbesar sedikit saat hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Menambahkan bayangan lebih kuat saat hover */
+}
+
+.intro-text {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 30px; /* Memberikan jarak setelah paragraf pertama */
+  font-family: 'Roboto', sans-serif;
+  color: #5c4033;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.benefits-list {
+  text-align: left;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  padding-left: 0;
+}
+
+.benefits-list li {
+  font-size: 1.2em;
+  line-height: 1.8;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.benefits-list li strong {
+  color: #d87d0e;  /* Warna oranye untuk teks yang di-bold */
+}
+
+.benefits-list li:before {
+  content: "🍹 ";  /* Menambahkan ikon gelas minuman */
+  font-size: 1.5em;
+  color: #d87d0e;
+  margin-right: 10px;
+}
+
+/* Section Drinks */
+#drinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Untuk memusatkan daftar minuman */
+  padding: 20px;
+}
+
+/* Style untuk setiap drink item */
+.drink {
+  width: 30%;
+  text-align: center;
+  background-color: #fff3e0;  /* Warna latar belakang ringan */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Efek hover pada tiap drink */
+.drink:hover {
+  transform: translateY(-5px); /* Efek terangkat saat hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
+}
+
+/* Gambar minuman */
+.drink img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Judul nama minuman */
+.drink h3 {
+  font-size: 1.8em;
+  color: #d87d0e; /* Warna oranye */
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+/* Efek hover pada nama minuman */
+.drink h3:hover {
+  color: #ff5733; /* Mengubah warna saat hover */
+  text-decoration: underline;
+}
+
+/* Style untuk harga */
+.price {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #28a745; /* Warna hijau untuk harga */
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Style untuk rasa */
+.flavor {
+  font-size: 1.1em;
+  color: #555;  /* Warna abu-abu untuk rasa */
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+/* Tombol Beli Sekarang */
+.buy-button {
+  width: 100%;             /* Kontainer buy-button mengambil lebar penuh */
+  display: flex;           /* Menjadikan kontainer menggunakan Flexbox */
+  justify-content: center; /* Memusatkan tombol secara horizontal */
+  align-items: center;     /* Memusatkan tombol secara vertikal jika diperlukan */
+  margin-top: 20px;
+}
+
+.buy-button button {
+  padding: 10px 20px;
+  font-size: 1.5em;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;  /* Tentukan lebar tombol */
+}
+
+.buy-button button:hover {
+  background-color: #218838;
+}
+
+/* Section Team */
+#team {
+  background: linear-gradient(to bottom, #FFFACD, #FFD700); /* Gradasi dari putih ke kuning muda */
+  text-align: center;
+  padding: 40px 0;
+}
+
+/* Judul Tim */
+#team h2 {
+  font-size: 2.5em;
+  color: #d87d0e; /* Warna oranye */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Grid Layout untuk Anggota Tim */
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Membagi grid menjadi 3 kolom */
+  gap: 20px;  /* Jarak antar anggota tim */
+  justify-items: center; /* Memusatkan setiap anggota tim */
+  padding: 20px;
+}
+
+/* Setiap anggota tim */
+.team-member {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  background-color: #fff; /* Memberi latar belakang putih agar lebih elegan */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: scale(1.05); /* Efek zoom sedikit saat hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan lebih kuat saat hover */
+}
+
+/* Foto Anggota */
+.team-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Membuat gambar anggota tim berbentuk lingkaran */
+  object-fit: cover; /* Menjaga gambar tetap proporsional */
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer; /* Mengubah cursor menjadi pointer untuk menunjukkan elemen interaktif */
+}
+
+/* Efek zoom pada foto saat hover */
+.team-photo:hover {
+  transform: scale(1.1);
+}
+
+/* Nama Anggota */
+.team-member p {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  transition: color 0.3s ease; /* Transisi yang halus untuk perubahan warna */
+}
+
+.team-member p:hover {
+  color: #d87d0e; /* Warna saat nama anggota di-hover (sentuh) */
+  cursor: pointer; /* Mengubah cursor menjadi pointer saat di-hover */
+}
+
+/* Biodata Anggota Tim */
+.bio {
+  display: none; /* Sembunyikan biodata secara default */
+  text-align: left;
+  font-size: 1em;
+  color: #555;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  transition: opacity 0.3s ease-in-out, color 0.3s ease; /* Transisi halus untuk perubahan warna */
+  opacity: 0; /* Memulai dengan transparansi */
+}
+
+/* Tampilkan biodata ketika anggota aktif */
+.team-member.active .bio {
+  display: block;
+  opacity: 1; /* Menampilkan biodata dengan efek transisi */
+}
+
+/* Ubah warna teks biodata saat aktif */
+.team-member.active .bio p {
+  color: #d87d0e; /* Warna tulisan biodata saat anggota aktif */
+}
+
+/* Efek perubahan warna biodata ketika disentuh */
+.team-member.active .bio p:hover {
+  color: #ff4500; /* Warna lebih cerah saat biodata disentuh */
+}
+
+/* Member Info */
+.member-info {
+  display: none; /* Secara default, informasi anggota tersembunyi */
+  color: #333;
+}
+
+.team-member.active .member-info {
+  display: block; /* Menampilkan informasi ketika anggota aktif */
+}
+
+
+
+
+
+
+
+/* Section Logo Sekolah */
+#school-logo-section {
+  padding: 60px 0;
+  background-color: #FFD700;  /* Latar belakang kuning solid */
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Kategori Logo Sekolah */
+#school-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style untuk logo sekolah */
+#school-logo img {
+  width: 250px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Teks nama sekolah */
+#school-logo .school-text {
+  font-size: 2.5em;
+  color: #000; /* Warna teks hitam */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+  white-space: nowrap; /* Agar teks tidak terpotong */
+  overflow: hidden;
+  width: 0%; /* Mulai dengan lebar 0% */
+  animation: moveText 10s forwards, fadeOutText 10s 5s forwards; /* Animasi teks masuk dan hilang */
+}
+
+/* Animasi untuk teks masuk dari kiri ke kanan */
+@keyframes moveText {
+  0% {
+    width: 0%; /* Teks dimulai dari kiri */
+  }
+  50% {
+    width: 100%; /* Teks bergerak dari kiri ke kanan */
+  }
+  100% {
+    width: 100%; /* Teks tetap terlihat sepenuhnya */
+  }
+}
+
+/* Animasi untuk teks menghilang setelah jeda */
+@keyframes fadeOutText {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Setiap siklus animasi akan berulang */
+#school-logo .school-text {
+  animation: moveText 10s forwards, fadeOutText 10s 10s forwards, repeatText 17s 12s infinite; /* Loop setelah selesai */
+}
+
+@keyframes repeatText {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    opacity: 0;
+    width: 0%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
